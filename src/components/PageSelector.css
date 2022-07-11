@@ -1,0 +1,7 @@
+.selector select{
+  padding: 2px;
+  border: none;
+  text-align: center;
+  margin-left: 0.5rem;
+  border-radius: 6px;
+}

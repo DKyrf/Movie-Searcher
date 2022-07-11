@@ -1,0 +1,27 @@
+.search-header{
+    text-align: center;
+}
+
+.search-header h2{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.search-header p{
+    letter-spacing: 2px;
+}
+
+.search-header button{
+    margin: 1rem 0;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    border: none;
+    box-shadow: 5px 5px 10px -8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.search-header button:hover{
+  background-color: rgba(245, 186, 186, 0.524);
+}
