@@ -1,4 +1,15 @@
 .globalWrapper{
-    background-color: rgb(193, 193, 193);
+    background-color: rgb(109, 109, 109);
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px -5px;
     padding: 1rem 2rem;   
+    width: 50rem;
+    margin: 1rem auto;
+    max-width: 85%;
+}
+
+@media (min-width:820px) {
+    .globalWrapper{
+        max-width: 70%;
+    }
 }

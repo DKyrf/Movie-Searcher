@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './App.css';
 import SearchItem from './components/SearchItem';
 import CardData from "./components/CardData"
 

@@ -1,4 +1,9 @@
-
+label{
+    text-transform: uppercase;
+    color: #ccc;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
 .search__selector{
     display: flex;
     justify-content: space-between;
@@ -17,25 +22,37 @@
 .search__option input {
     border-radius: 6px;
     border: 1px solid #ccc;
-    height: 1.5rem;
+    background-color: rgb(56, 56, 56);
+    box-shadow: 8px 8px 10px -12px rgb(0, 0, 0);
+    height: 2rem;
     padding: 0 1rem;
     text-align: center;
+    color: #ccc;
+
 }
 .search__option select{
     border-radius: 6px;
+    background-color: rgb(56, 56, 56);
     border: 1px solid #ccc;
-    height: 1.5rem;
+    height: 2rem;
     padding: 0 1rem;
     text-align: center;
+    box-shadow: 8px 8px 10px -12px rgb(0, 0, 0);
+    color: #ccc;
+
 }
 .operator{
     display: flex;
-    justify-content: center;
-    margin: 1rem 0;
+    justify-content: end;
+    margin: 1rem 0 0;
     gap: 10px;
 
 }
 .search__button{
+    text-align: center;
+    background-color: rgb(115, 0, 150);
+    box-shadow: 8px 8px 10px -12px rgb(0, 0, 0);
+    color: white;
     border-radius: 5px;
     border: none;
     padding: 0.75rem 5rem;
@@ -44,7 +61,7 @@
 
 .search__button:hover{
     cursor: pointer;
-    background-color: rgb(137, 137, 137);
+    background-color: rgb(158, 0, 207);
 }
 
 .range{
@@ -61,4 +78,19 @@
 .search__button.center{
     width: 100%;
     margin: 0 auto;
+}
+
+
+@media (max-width: 670px) {
+    .search__option select{
+        height: 4.5rem;
+    }
+    .search__option select{
+        text-transform: uppercase;
+    }
+    .search__button{
+      width: 100%;
+      height: 4rem;
+      text-transform: uppercase;
+    }
 }

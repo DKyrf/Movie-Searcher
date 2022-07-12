@@ -10,11 +10,6 @@ export default function Search(props){
 
   }
 
-  function onHideButton(btn){
-    btn.preventDefault()
-    props.hideResponse()
-  }
-
     return (
     <Wrapper>
       <form onSubmit={(e) => {getData(e)}}>
@@ -23,7 +18,7 @@ export default function Search(props){
           <label>Type:</label>
           {/* <input /> */}
           <select name="title">
-            {options.map((el, ind) => <option key={ind}>{el.name}</option>)}
+            {options.map((el,ind) => <option key={ind}>{el.name}</option>)}
           </select>
         </div>
         <div className="search__option">
@@ -43,7 +38,6 @@ export default function Search(props){
         </div>
         </div>
         <div className="operator">
-          <button onClick={onHideButton} className="search__button">Hide</button>
           <button className="search__button">Search</button>
         </div>
 

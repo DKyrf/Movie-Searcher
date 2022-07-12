@@ -27,10 +27,7 @@ export default function SearchItem(props){
       setCondition(true)
 
     }
-
-    function hideHandler(){
-        setCondition(true)
-    }
+    
     function showHandler(){
         setCondition(false)
     }
@@ -41,7 +38,6 @@ export default function SearchItem(props){
           {!searchStarted 
           ? <Search 
             sendData={searchData}
-            hideResponse={hideHandler}
             /> 
           : <Wrapper>
           <SearchResultHeading 
